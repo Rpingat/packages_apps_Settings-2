@@ -232,6 +232,13 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         });
     }
 
+        // Check availability of Smart Charging
+        Preference mSmartCharging = (Preference) findPreference("smart_charging_key");
+        if (!getResources().getBoolean(R.bool.config_supportSmartCharging)) {
+            getPreferenceScreen().removePreference(mSmartCharging);
+        }
+    }
+
     @Override
     public void onResume() {
         super.onResume();
