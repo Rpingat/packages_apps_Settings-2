@@ -366,5 +366,7 @@
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
 
+    <string name="battery_temp">Battery temperature</string>
+
 </resources>
  
