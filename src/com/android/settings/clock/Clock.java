@@ -299,7 +299,7 @@ public class Clock extends SettingsPreferenceFragment implements
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.customisation_settings_clock;
+                    sir.xmlResId = R.xml.clock_settings;
                     result.add(sir);
                     return result;
                 }
