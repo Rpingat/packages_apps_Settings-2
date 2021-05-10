@@ -222,6 +222,13 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+
+        // Check availability of Smart Charging
+        Preference mSmartCharging = (Preference) findPreference("smart_charging_key");
+        if (!getResources().getBoolean(R.bool.config_supportSmartCharging)) {
+            getPreferenceScreen().removePreference(mSmartCharging);
+        }
+
         final Button showStatsBtn = mBatteryLayoutPref.findViewById(R.id.btn_show_stats);
         showStatsBtn.setOnClickListener(v -> {
            new SubSettingLauncher(getContext())
@@ -230,13 +237,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                    .setTitleRes(R.string.advanced_battery_title)
                    .launch();
         });
-    }
-
-        // Check availability of Smart Charging
-        Preference mSmartCharging = (Preference) findPreference("smart_charging_key");
-        if (!getResources().getBoolean(R.bool.config_supportSmartCharging)) {
-            getPreferenceScreen().removePreference(mSmartCharging);
-        }
     }
 
     @Override
