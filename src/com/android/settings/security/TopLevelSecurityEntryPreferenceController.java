@@ -48,7 +48,7 @@ public class TopLevelSecurityEntryPreferenceController extends BasePreferenceCon
                 Utils.getAppLockManager(mContext);
         CharSequence summary = null;
         if (fpm != null && fpm.isHardwareDetected() && FaceUtils.isFaceUnlockSupported()) {
-            sunmary = mContext.getText(R.string.security_dashboard_summary_face_and_fingerprint);
+            summary = mContext.getText(R.string.security_dashboard_summary_face_and_fingerprint);
         } else if (fpm != null && fpm.isHardwareDetected()) {
             summary = mContext.getText(R.string.security_dashboard_summary);
         } else if (faceManager != null && faceManager.isHardwareDetected()) {
