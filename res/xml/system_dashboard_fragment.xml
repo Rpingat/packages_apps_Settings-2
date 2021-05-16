@@ -45,6 +45,12 @@
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
 
     <Preference
+        android:title="@string/buttons_title"
+        android:summary="@string/buttons_summary"
+        android:fragment="com.android.settings.buttons.Buttons"
+        android:icon="@drawable/ic_settings_buttons"/>
+    
+    <Preference
         android:key="date_time_settings"
         android:title="@string/date_and_time"
         android:icon="@drawable/ic_settings_date_time"
