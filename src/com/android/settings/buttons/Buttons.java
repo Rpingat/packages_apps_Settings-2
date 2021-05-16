@@ -499,7 +499,7 @@ public class Buttons extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.HAVOC_SETTINGS;
+        return -1;
     }
 
     @Override

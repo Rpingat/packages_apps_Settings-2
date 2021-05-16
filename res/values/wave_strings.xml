@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+  <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2020 Wave-OS
 
@@ -269,7 +269,7 @@
     <!-- Generic stuff used everywhere -->
     <string name="reset">Reset</string>
 
-    <!-- Buttons -->
+    <!-- Buttons --> 
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_back_key_title">Back button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
@@ -315,5 +315,21 @@
     <string name="backlight_summary_disabled">Disabled</string>
     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Enabled</string>
+
+    <!-- HW keys -->
+    <string name="hardware_keys_title">Hardware</string>
+    <string name="hardware_keys_disable_title">Hardware keys</string>
+    <string name="hardware_keys_disable_summary">Use the device hardware keys for navigation</string>
+
+    <!-- ANBI -->
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with the hardware buttons while the screen is being used</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="navigation_bar_summary">Show on-screen navigation keys</string>
+
+    <string name="buttons_title">Buttons &amp; Navigation</string>
+    <string name="buttons_summary">Hardware keys, Navigation bar</string>
 
 </resources>

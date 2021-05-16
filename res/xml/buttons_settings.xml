@@ -16,14 +16,14 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/buttons_title" >
+    android:title="Buttons" >
 
     <PreferenceCategory
         android:key="hw_keys"
-        android:title="@string/hardware_keys_title" >
+        android:title="@st ring/hardware_keys_title" >
 
         <me.waveproject.framework.preference.SystemSettingSwitchPreference
-            android:key="hardware_keys_enable"
+             android:key="hardware_keys_enable"
             android:title="@string/hardware_keys_disable_title"
             android:summary="@string/hardware_keys_disable_summary"
             android:defaultValue="true" />
