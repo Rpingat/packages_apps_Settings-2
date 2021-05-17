@@ -45,7 +45,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.custom.preference.CustomDialogPreference;
 
 import com.android.settings.buttons.ButtonSettingsUtils;
-import me.waveproject.framework.preference.SwitchPreference;
+import androidx.preference.SwitchPreference;
 
 import java.util.List;
 import java.util.UUID;
@@ -153,11 +153,11 @@ public class Buttons extends SettingsPreferenceFragment implements
             mHardwareKeysEnable.setVisible(false);
         }
 
-        mSwapCapacitiveKeys = findPreference(KEY_SWAP_CAPACITIVE_KEYS);
-        if (mSwapCapacitiveKeys != null && !isKeySwapperSupported(getActivity())) {
-            mSwapCapacitiveKeys.setVisible(false);
-            mSwapCapacitiveKeys = null;
-        }
+//        mSwapCapacitiveKeys = findPreference(KEY_SWAP_CAPACITIVE_KEYS);
+//        if (mSwapCapacitiveKeys != null && !isKeySwapperSupported(getActivity())) {
+//            mSwapCapacitiveKeys.setVisible(false);
+//            mSwapCapacitiveKeys = null;
+//        }
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehavior));
@@ -341,10 +341,10 @@ public class Buttons extends SettingsPreferenceFragment implements
         return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
     }
 
-    private static boolean isKeySwapperSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_SWAP);
-    }
+//    private static boolean isKeySwapperSupported(Context context) {
+//        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+//        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_SWAP);
+//    }
 
     @Override
     public void onResume() {

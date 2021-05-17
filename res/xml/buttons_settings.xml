@@ -20,7 +20,7 @@
 
     <PreferenceCategory
         android:key="hw_keys"
-        android:title="@st ring/hardware_keys_title" >
+        android:title="@string/hardware_keys_title" >
 
         <me.waveproject.framework.preference.SystemSettingSwitchPreference
              android:key="hardware_keys_enable"
@@ -50,9 +50,9 @@
         android:key="navigation_keys"
         android:title="@string/navigation_title" >
 
-        <me.waveproject.framework.preference.SwitchPreference
+        <androidx.preference.SwitchPreference
             android:key="disable_nav_keys"
-            android:title="@string/navigation_bar_title"
+            android:title="@string/navigation_title"
             android:summary="@string/navigation_bar_summary" />
 
         <Preference
