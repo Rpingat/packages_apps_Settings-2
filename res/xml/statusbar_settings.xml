@@ -41,6 +41,13 @@
         <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
     </PreferenceScreen>
 
+    <Preference
+	android:key="clock_settings"
+        android:title="@string/clocksettings_title"
+        android:summary="@string/clocksettings_summary"
+        android:fragment="com.android.settings.clock.Clock"
+        android:icon="@drawable/ic_settings_clock" />
+
     <me.waveproject.framework.preference.SystemSettingSwitchPreference
         android:key="show_fourg_icon"
         android:title="@string/show_fourg_icon_title"
