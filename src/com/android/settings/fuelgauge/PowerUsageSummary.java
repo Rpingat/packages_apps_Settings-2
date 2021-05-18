@@ -81,9 +81,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     Preference mLastFullChargePref;
     @VisibleForTesting
-    PowerGaugePreference mBatteryTempPref;
-    @VisibleForTesting
-    PowerGaugePreference mLastFullChargePref;
+    Preference mBatteryTempPref;
     @VisibleForTesting
     PowerUsageFeatureProvider mPowerFeatureProvider;
     @VisibleForTesting
